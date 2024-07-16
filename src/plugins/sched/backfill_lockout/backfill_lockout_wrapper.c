@@ -48,10 +48,10 @@
 #include "src/common/log.h"
 #include "src/common/macros.h"
 #include "src/slurmctld/slurmctld.h"
-#include "backfill.h"
+#include "backfill_lockout.h"
 
-const char plugin_name[] = "Slurm Backfill Scheduler plugin";
-const char plugin_type[] = "sched/backfill";
+const char plugin_name[] = "Slurm Backfill Lockout Scheduler plugin";
+const char plugin_type[] = "sched/backfill_lockout";
 const uint32_t plugin_version = SLURM_VERSION_NUMBER;
 
 static pthread_t backfill_thread = 0;
@@ -83,7 +83,7 @@ extern void fini(void)
 {
 	slurm_mutex_lock(&thread_flag_mutex);
 	if (backfill_thread) {
-		verbose("Backfill scheduler plugin shutting down");
+		verbose("Backfill lockout scheduler plugin shutting down");
 		stop_backfill_agent();
 		slurm_thread_join(backfill_thread);
 	}

@@ -38,8 +38,8 @@
 \*****************************************************************************/
 
 
-#ifndef _SLURM_BACKFILL_H
-#define _SLURM_BACKFILL_H
+#ifndef _SLURM_BACKFILL_LOCKOUT_H
+#define _SLURM_BACKFILL_LOCKOUT_H
 
 /* backfill_agent - detached thread periodically attempts to backfill jobs */
 extern void *backfill_agent(void *args);
@@ -50,4 +50,4 @@ extern void stop_backfill_agent(void);
 /* Note that slurm.conf has changed */
 extern void backfill_reconfig(void);
 
-#endif	/* _SLURM_BACKFILL_H */
+#endif	/* _SLURM_BACKFILL_LOCKOUT_H */
