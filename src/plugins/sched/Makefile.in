@@ -456,7 +456,7 @@ target_vendor = @target_vendor@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = backfill builtin
+SUBDIRS = backfill backfill_lockout builtin
 all: all-recursive
 
 .SUFFIXES:
