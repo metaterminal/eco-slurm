@@ -1,3 +1,3 @@
 # Makefile for scheduler plugins
 
-SUBDIRS = backfill backfill_lockout builtin
+SUBDIRS = backfill lockout builtin

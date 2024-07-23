@@ -101,7 +101,7 @@
 #include "src/stepmgr/gres_stepmgr.h"
 #include "src/stepmgr/srun_comm.h"
 
-#include "backfill_lockout.h"
+#include "lockout.h"
 
 #define BACKFILL_INTERVAL	30
 #define BACKFILL_RESOLUTION	60

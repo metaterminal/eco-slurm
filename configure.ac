@@ -499,7 +499,7 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/proctrack/pgid/Makefile
 		 src/plugins/sched/Makefile
 		 src/plugins/sched/backfill/Makefile
-		 src/plugins/sched/backfill_lockout/Makefile
+		 src/plugins/sched/lockout/Makefile
 		 src/plugins/sched/builtin/Makefile
 		 src/plugins/select/Makefile
 		 src/plugins/select/cons_tres/Makefile

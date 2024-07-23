@@ -48,10 +48,10 @@
 #include "src/common/log.h"
 #include "src/common/macros.h"
 #include "src/slurmctld/slurmctld.h"
-#include "backfill_lockout.h"
+#include "lockout.h"
 
 const char plugin_name[] = "Slurm Backfill Lockout Scheduler plugin";
-const char plugin_type[] = "sched/backfill_lockout";
+const char plugin_type[] = "sched/lockout";
 const uint32_t plugin_version = SLURM_VERSION_NUMBER;
 
 static pthread_t backfill_thread = 0;
