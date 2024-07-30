@@ -706,7 +706,7 @@ enum select_plugin_type {
 	 * systems that are upgrading from an older version and were using
 	 * cons_res. This can be removed two versions after 23.11.
 	 */
-	SELECT_PLUGIN_CONS_RES = 101,
+	//SELECT_PLUGIN_CONS_RES = 101,
 	SELECT_PLUGIN_LINEAR         = 102, /* Linear on a normal system */
 	/* 103 unused (originally used for BGQ) */
 	/* 104 unused (originally used for Cray/ALPS with select/linear) */
