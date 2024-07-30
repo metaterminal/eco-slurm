@@ -1049,6 +1049,7 @@ static bool off_peak(void)
 {
 	time_t now;
 	struct tm *time_struct;
+	int curr_hour;
 	time(&now);
 	time_struct = localtime(&now);
 	curr_hour = time_struct->tm_hour;
