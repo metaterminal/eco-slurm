@@ -928,6 +928,7 @@ extern void schedule(bool full_queue)
 {
 
 	if (slurmctld_config.scheduling_disabled)
+		info("off-peak, scheduling disabled");
 		return;
 
 	slurm_mutex_lock(&sched_mutex);

@@ -1095,6 +1095,10 @@ extern void *backfill_agent(void *args)
 			break;
 		
 		if (!off_peak()) {
+			if (slurm_conf.debug_flags & DEBUG_FLAG_BACKFILL)
+				info("off-peak, stopping backfill");
+			else
+				debug("off-peak, stopping backfill");
 			slurmctld_config.scheduling_disabled = true; // stop scheduling in other places
 			continue;
 		} else {
