@@ -62,11 +62,11 @@ extern int init(void)
 	if (slurmctld_config.scheduling_disabled)
 		return SLURM_SUCCESS;
 
-	sched_verbose("Backfill scheduler plugin loaded");
+	sched_verbose("Lockout scheduler plugin loaded");
 
 	slurm_mutex_lock(&thread_flag_mutex);
 	if (backfill_thread) {
-		debug2("Backfill thread already running, not starting another");
+		debug2("Lockout thread already running, not starting another");
 		slurm_mutex_unlock(&thread_flag_mutex);
 		return SLURM_ERROR;
 	}
